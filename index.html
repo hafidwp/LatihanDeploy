@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="landing-page">
+      <h1 class="text"><span>Halo selamat datang di webstie pertama saya</span></h1>
+    </div>
+    <!-- Navbar -->
+    <nav>
+      <div class="icon">
+        <img src="./assets/Icon.jpg" alt="" />
+      </div>
+      <ul>
+        <li class="links"><a href="#about-me">about me</a></li>
+        <li class="links"><a href="#portfolio">my portfolio</a></li>
+        <li class="links"><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Content -->
+    <section id="about-me">
+      <div class="introduction">
+        <img src="./assets/Hafidh.jpg" alt="" />
+        <p>perkenalkan nama saya hafidh, seorang mahasiswa dengan jurusan informatika. yang sedang berfokus pada web developer dan membuat tampilan web responsive dan modern</p>
+      </div>
+      <div class="activities">
+        <div class="first-card">
+          <img src="./assets/coding.png" alt="" />
+          <p>saya telah mengikuti beberapa kelas untuk membuat tampilan web responsive dan telah mempunyai beberapa sertifikat</p>
+        </div>
+        <div class="second-card">
+          <img src="./assets/js.png" alt="" />
+          <p>saya sedang mempelajari cara membuat tampilan website dengan menggunakan html, css, javascript. dan saya juga dapat menggunakan framework modern seperti bootstrap</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <div class="content-portfolio">
+        <h1>my portfolio</h1>
+        <div class="container">
+          <img src="./assets/assistance-repairt.jpg" alt="" />
+          <img src="./assets/responsive-design.jpg" alt="" />
+          <img src="./assets/technology-coffee.jpg" alt="" />
+          <img src="./assets/website-development.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section id="contact">
+      <h1>kontak saya</h1>
+      <div class="contact-me">
+        <form action="form-contact-me">
+          <div class="contact-input">
+            <label for="username">username</label>
+            <input type="username" name="username" id="username" placeholder="Username" />
+            <label for="Email">email</label>
+            <input type="Email" name="Email" id="Email" placeholder="example@gmail.com" />
+            <label for="text">feedback</label>
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            <button>submit</button>
+          </div>
+        </form>
+        <h3 class="title-non-desktop">Ketuk salah satu untuk mendapatkan info</h3>
+        <div class="sosmed">
+          <div class="card">
+            <img src="./assets/phone.png" alt="" />
+            <p>089655658531</p>
+          </div>
+          <div class="card">
+            <img src="./assets/instagram.png" alt="" />
+            <p>hafidwp_</p>
+          </div>
+          <div class="card">
+            <img src="./assets/gmail.png" alt="" />
+            <p>hafifh790@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <img src="./assets/copyright.png" alt="" />
+      <p>Kelas Website Responsive, Inc. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #eef5ff;
+}
+.landing-page {
+  background-image: url(./assets/Background.jpg);
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+}
+.text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  color: #fff;
+  transform: scale(0.8);
+  font-size: 50px;
+  font-weight: 800;
+}
+.text span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+/* navbar */
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: rgb(35, 35, 35);
+  justify-content: space-between;
+  padding: 0.5rem 4rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2em;
+}
+nav div img {
+  width: 70px;
+  border-radius: 10px;
+}
+nav ul li a {
+  font-size: 18px;
+  color: #eef5ff;
+  text-decoration: none;
+  padding: 5px 0;
+  font-weight: 500;
+  transition: all;
+  transition-duration: 400ms;
+  border-bottom: 1px solid #eef5ff00;
+}
+nav ul li a:hover {
+  border-bottom: 1px solid #eef5ff;
+  cursor: pointer;
+}
+/* content */
+#about-me {
+  padding: 2rem 0;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+.introduction img {
+  width: 15%;
+  padding-bottom: 10px;
+}
+
+.introduction p {
+  width: 450px;
+}
+
+.activities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-card,
+.second-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.first-card img {
+  width: 35%;
+  padding-bottom: 10px;
+}
+.first-card p {
+  width: 300px;
+}
+.second-card img {
+  width: 35%;
+  border-radius: 30px;
+  padding-bottom: 10px;
+}
+.second-card p {
+  width: 450px;
+}
+/* portfolio */
+#portfolio {
+  padding: 2rem 0;
+}
+.content-portfolio h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  font-size: 30px;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container img {
+  max-width: 300px;
+  display: inline-block;
+  width: 90%;
+  vertical-align: middle;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+/* contact */
+#contact {
+  padding: 2rem 0;
+}
+
+#contact h1 {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 30px;
+}
+.contact-me {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8rem 10rem;
+}
+.contact-input {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 24px;
+  color: black;
+}
+input {
+  width: 500px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+textarea {
+  margin-bottom: 20px;
+}
+button {
+  border: none;
+  background-color: teal;
+  color: white;
+  padding: 0.5em 0;
+}
+.sosmed {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8rem 10rem;
+}
+.sosmed img {
+  width: 7%;
+}
+.card {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+h3 {
+  display: none;
+}
+footer {
+  background-color: rgb(35, 35, 35);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  gap: 0.5rem;
+}
+footer img {
+  width: 20px;
+}
+footer p {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .text {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul {
+    display: none;
+  }
+  .introduction {
+    padding: 2rem;
+  }
+  .activities {
+    flex-direction: column;
+  }
+
+  .contact-me {
+    flex-direction: column;
+  }
+
+  h3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+
+    color: black;
+  }
+  .sosmed {
+    margin-left: 4px;
+  }
+  .sosmed img {
+    width: 15%;
+  }
+  input,
+  label,
+  textarea,
+  button {
+    width: 100%;
+  }
+  textarea {
+    height: 10%;
+  }
+}
